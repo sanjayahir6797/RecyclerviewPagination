@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_detailed_view.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Include the Toolbar -->
+  <!--  <include layout="@layout/toolbar_layout" />-->
+
+    <TextView
+        android:id="@+id/textViewPostId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPostTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPostId"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewComputedResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPostTitle"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:text="Computed Result:"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Add more views as needed to display additional post details -->
+
+</RelativeLayout>
